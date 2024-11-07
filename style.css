@@ -1,9 +1,9 @@
+@charset "UTF-8";
 a {
   text-decoration: none;
 }
 
-header a {
-  color: #FFF;
+nav li {
   text-align: center;
   font-family: "Antic Didone";
   font-size: 35.5px;
@@ -12,13 +12,17 @@ header a {
   line-height: normal;
 }
 
-header {
+nav {
   backdrop-filter: blur(10px);
+}
+
+nav button {
+  color: #FFF;
 }
 
 #background-video {
   height: 1080px;
-  width: 100vw;
+  width: 100%;
   object-fit: cover;
   position: fixed;
   left: 0;
@@ -28,18 +32,107 @@ header {
   z-index: -1;
 }
 
-h1 {
+.video h1 {
   font-size: 6rem;
   margin-top: 30vh;
   color: #ECDFCC;
   text-align: center;
-  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000;
   font-family: Italiana;
   font-size: 96px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 20%;
+}
+
+.histoire {
+  background-color: #697565;
+}
+.histoire p {
+  color: #181C14;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.histoire h2 {
+  color: #181C14;
+  font-family: "Antic Didone";
+  font-size: 60px;
+  width: 75%;
+  text-align: center;
+}
+.histoire section {
+  background-color: #ECDFCC;
+  border-radius: 50px;
+  width: 350px;
+  height: 411px;
+  position: relative;
+  top: -316px;
+  left: 25px;
+  flex-shrink: 0;
+  z-index: 0;
+}
+.histoire img {
+  z-index: 10;
+}
+
+.article {
+  background-color: #FFF;
+  width: 100%;
+}
+.article .carte {
+  border: 1px solid #181C14;
+  border-radius: 50px;
+  align-items: center;
+  height: 100%;
+  width: 70%;
+}
+.article h6 {
+  margin-bottom: 50px;
+  color: #181C14;
+  text-align: center;
+  font-family: Inter;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.article img {
+  width: 80%;
+}
+.article h2 {
+  color: #181C14;
+  font-family: "Antic Didone";
+  font-size: 60px;
+}
+
+.formulaire {
+  background-color: #ECDFCC;
+}
+.formulaire h2 {
+  color: #181C14;
+  text-align: center;
+  font-family: "Antic Didone";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.formulaire h4 {
+  color: #181C14;
+  text-align: center;
+  font-family: "Antic Didone";
+  font-size: 35.5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.formulaire .formalité {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
