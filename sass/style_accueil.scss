@@ -19,16 +19,22 @@ $w-50 : 50%;
 $w-40 : 40%;
 $w-20 : 20%;
 
+$font-p : "Inter", sans-serif ;
+$font-t : "Antic Didone";
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 a{
     text-decoration: none;
+    transition: 0.5s;
+
 }
 
 nav li{
     text-align: center;
-    font-family: "Antic Didone";
+    font-family: $font-t;
     font-size: $titre-h4;
     font-style: normal;
     font-weight: 400;
@@ -76,15 +82,19 @@ nav button{
     background-color: $vert;
     & p{
         color: $noir;
-        font-family: Inter;
+        font-family: $font-p ;
         font-size: $para;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        transition: 0.5s;
+    }
+    & p:hover{
+        transform: scale(1.15);
     }
     & h2{
         color: $noir;
-        font-family: "Antic Didone";
+        font-family: $font-t;
         font-size: $titre-h2;
         width: 75%;
         text-align: center;
@@ -115,6 +125,10 @@ nav button{
         align-items: center;
         height: 100%;
         width: $w-70;
+        transition: 0.5s;
+    }
+    & .carte:hover{
+        transform: scale(1.25);
     }
     & h6{
         margin-bottom: 50px;
@@ -131,7 +145,7 @@ nav button{
     }
     & h2{
         color: $noir;
-        font-family: "Antic Didone";
+        font-family: $font-t;
         font-size: $titre-h2;
     }
 }
@@ -141,7 +155,7 @@ nav button{
     & h2{
         color: $noir;
         text-align: center;
-        font-family: "Antic Didone";
+        font-family: $font-t;
         font-size: $titre-h2;
         font-style: normal;
         font-weight: 400;
@@ -150,14 +164,76 @@ nav button{
     & h4{
         color: $noir;
         text-align: center;
-        font-family: "Antic Didone";
+        font-family: $font-t;
         font-size: $titre-h4;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
     }
+    & .forms input{
+        width: $w-100;
+        background-color: $creme;
+        border: $noir 1px solid;
+        border-radius: 86px;
+        padding: 10px;
+    }
     & .formalité{
         width: $w-100;
-
+        gap: 20%;
+        & input{
+            width: $w-40;
+        }
     }
+    & .checbox{
+        width: $w-100;
+        & p{
+            color: $noir;
+            font-size: $para;
+            font-family: $font-p;
+        } 
+        & input{
+            width: min-content;
+            color: $creme;
+        }
+    }
+    & .button{
+        padding: 10px;
+        border: $noir 1px solid;
+        border-radius: 40px;
+        transition: 0.5s;
+        color: $noir;
+        &:hover{
+            color: $creme;
+            background-color: $noir;
+            transform: scale(1.3);
+            text-decoration: none;
+        }
+        
+    }
+    & a{
+        color: $noir;
+        transition: 0.5s;
+    } & a:hover{
+        text-decoration:underline;
+    }
+    
+}
+
+footer{
+    background-color: $gris;
+    padding-top: 50px;
+    & a{
+        color: $creme;
+        font-size: $para;
+        transition: 0.5s;
+    }
+    & a:hover{
+        transform: scale(1.25);
+    }
+    & h5, h5 a{
+        font-size: $titre-h5;
+        text-decoration: underline;
+        color: $creme;
+    }
+    
 }
