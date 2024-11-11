@@ -1,0 +1,156 @@
+
+$creme : #ECDFCC;
+$vert : #697565;
+$noir : #181C14;
+$gris : #3C3D37;
+
+$titre-h1 : 96px;
+$titre-h2 : 60px;
+$titre-h3 : 48px;
+$titre-h4 : 35.5px;
+$titre-h5 : 27.3px;
+$titre-h6 : 21px;
+$para : 16px;
+
+$w-100 : 100%;
+$w-80 : 80%;
+$w-70 : 70%;
+$w-60 : 60%;
+$w-50 : 50%;
+$w-40 : 40%;
+$w-20 : 20%;
+
+$font-p : "Inter", sans-serif ;
+$font-t : "Antic Didone";
+
+body{
+    background-color: $creme;
+}
+
+h2{
+    font-size: $titre-h2;
+    font-family: $font-t;
+    color: $noir;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+p{
+    font-size: $para;
+    font-family: $font-p;
+    color: $noir;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: 0.5s;
+}
+
+.image--debut {
+    height:1080px;
+    width: $w-100;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    }
+
+    
+.image-debut h1 {
+    font-size: 6rem;
+    margin-top: 30vh;
+    color: $creme;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    font-family: Italiana;
+    font-size:$titre-h1;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20%;
+}
+
+
+.legende{
+    background-color: $creme;
+    width: $w-100;
+    height: auto;
+    & .content-leg{
+        border: 1px solid $noir;
+        border-radius: 74px;
+        border-right: none;
+    }
+    & p:hover{
+        scale: 1.1;
+    }
+}
+
+.envole{
+    background-color: $creme;
+    width: $w-100;
+    height: auto;
+    & .content-env{
+        border-radius: 90px;
+        background-color: $vert;
+    }
+    & p{
+        width: $w-70;
+        &:hover{
+            scale: 1.1;
+        }
+    }
+    
+}
+
+.guerre{
+    background-color: $creme;
+    width: $w-100;
+    height: auto;
+    & p{
+        width: $w-50;
+        &:hover{
+            scale: 1.1;
+        }
+    }
+    & h2{
+        width: $w-50;
+    }
+    
+}
+
+.moderne{
+    background-color: $creme;
+    width: $w-100;
+    height: auto;
+    & p{
+        width: $w-50;
+        &:hover{
+            scale: 1.1;
+        }
+    }
+    & h2{
+        width: $w-80;
+    }
+    & img{
+        width: $w-60;
+    }
+    
+}
+
+
+.citation{
+    background-color: $creme;
+    width: $w-100;
+    height: auto;
+    & h5{
+        width: $w-50; 
+        font-size: $titre-h5;
+        color: $noir;
+        font-family: $font-p;
+    }
+}

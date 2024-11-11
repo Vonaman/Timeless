@@ -1,4 +1,129 @@
 @charset "UTF-8";
+body {
+  background-color: #ECDFCC;
+}
+
+h2 {
+  font-size: 60px;
+  font-family: "Antic Didone";
+  color: #181C14;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  color: #181C14;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: 0.5s;
+}
+
+.image--debut {
+  height: 1080px;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.image-debut h1 {
+  font-size: 6rem;
+  margin-top: 30vh;
+  color: #ECDFCC;
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  font-family: Italiana;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20%;
+}
+
+.legende {
+  background-color: #ECDFCC;
+  width: 100%;
+  height: auto;
+}
+.legende .content-leg {
+  border: 1px solid #181C14;
+  border-radius: 74px;
+  border-right: none;
+}
+.legende p:hover {
+  scale: 1.1;
+}
+
+.envole {
+  background-color: #ECDFCC;
+  width: 100%;
+  height: auto;
+}
+.envole .content-env {
+  border-radius: 90px;
+  background-color: #697565;
+}
+.envole p {
+  width: 70%;
+}
+.envole p:hover {
+  scale: 1.1;
+}
+
+.guerre {
+  background-color: #ECDFCC;
+  width: 100%;
+  height: auto;
+}
+.guerre p {
+  width: 50%;
+}
+.guerre p:hover {
+  scale: 1.1;
+}
+.guerre h2 {
+  width: 50%;
+}
+
+.moderne {
+  background-color: #ECDFCC;
+  width: 100%;
+  height: auto;
+}
+.moderne p {
+  width: 50%;
+}
+.moderne p:hover {
+  scale: 1.1;
+}
+.moderne h2 {
+  width: 80%;
+}
+.moderne img {
+  width: 60%;
+}
+
+.citation {
+  background-color: #ECDFCC;
+  width: 100%;
+  height: auto;
+}
+.citation h5 {
+  width: 50%;
+  font-size: 27.3px;
+  color: #181C14;
+  font-family: "Inter", sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
