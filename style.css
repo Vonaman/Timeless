@@ -124,6 +124,34 @@ p {
   font-family: "Inter", sans-serif;
 }
 
+input {
+  transition: 0.5s;
+}
+
+input:hover {
+  transform: scale(1.1);
+}
+
+nav {
+  z-index: 2;
+}
+
+.formulaire .img-forms {
+  position: absolute;
+  z-index: 0;
+  top: -10.5vh;
+  width: auto;
+  height: 100%;
+}
+
+.formulaire-compte {
+  margin-bottom: 33px;
+}
+
+.formulaire-compte .dur {
+  margin-right: 33px;
+}
+
 html {
   scroll-behavior: smooth;
 }
