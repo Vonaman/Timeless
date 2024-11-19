@@ -1,0 +1,60 @@
+
+$creme : #ECDFCC;
+$vert : #697565;
+$vert70 : #69756570;
+$noir : #181C14;
+$gris : #3C3D37;
+
+$titre-h1 : 96px;
+$titre-h2 : 60px;
+$titre-h3 : 48px;
+$titre-h4 : 35.5px;
+$titre-h5 : 27.3px;
+$titre-h6 : 21px;
+$para : 16px;
+
+$w-100 : 100%;
+$w-90 : 90%;
+$w-80 : 80%;
+$w-70 : 70%;
+$w-60 : 60%;
+$w-50 : 50%;
+$w-40 : 40%;
+$w-20 : 20%;
+
+$font-p : "Inter", sans-serif ;
+$font-t : "Antic Didone";
+
+.image-fond-compte .content{
+    margin: 10%;
+    background-color: $vert70;
+    backdrop-filter: blur(10px);
+    width: $w-40;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    gap: 50px;
+    border-radius: 62px;
+    & .contents{
+        width: $w-100;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+        transition: 0.5s;
+        & p{
+            margin: 0;
+            color: $creme;
+            font-size: $titre-h4;
+        }   &:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+    }
+    & .trait{
+        width: $w-90;
+        height: 2px;
+        background-color: $creme ;
+    }
+}
+

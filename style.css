@@ -152,6 +152,48 @@ nav {
   margin-right: 33px;
 }
 
+.formulaire-connexion {
+  margin-bottom: 145px;
+}
+
+.formulaire-connexion .dur {
+  margin-right: 33px;
+}
+
+.image-fond-compte .content {
+  margin: 10%;
+  background-color: rgba(105, 117, 101, 0.4392156863);
+  backdrop-filter: blur(10px);
+  width: 40%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  gap: 50px;
+  border-radius: 62px;
+}
+.image-fond-compte .content .contents {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  transition: 0.5s;
+}
+.image-fond-compte .content .contents p {
+  margin: 0;
+  color: #ECDFCC;
+  font-size: 35.5px;
+}
+.image-fond-compte .content .contents:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.image-fond-compte .content .trait {
+  width: 90%;
+  height: 2px;
+  background-color: #ECDFCC;
+}
+
 html {
   scroll-behavior: smooth;
 }
