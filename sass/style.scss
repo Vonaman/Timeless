@@ -1,4 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+
+// colors
+$white : #ffffff;
+$black : #000000;
+
+//border colors
+$border-black : #00000f;
+
+// border radius
+$border-radius-5px : 5px;
+$border-radius-50px : 50px;
+
+// positions
+$sticky : sticky;
+$pos-absolute : absolute;
+$pos-relative : relative;
+$pos-fixed : fixed;
+
+// align
+$ali-center : center;
+$ali-left : left;
+$ali-right : right;
+$ali-top : top;
+$ali-bottom : bottom;
+
+// z-index
+$z-1 : -1;
+$z-2 : -2;
+$z-3 : -3;
+$z1 : 1;
+$z2 : 2;
+$z3 : 3;
+
+// fonts size
+$titre-1 : 96px ;
+$titre-2 : 60px ;
+$titre-3 : 48px ;
+$titre-4 : 35.5px ;
+$titre-5 : 27.3px ;
+$titre-6 : 21px ;
+$para : 16px ;
+
+// font weight
+$weight-100 : 100;
+$weight-200 : 200;
+$weight-300 : 300;
+$weight-400 : 400;
+$weight-500 : 500;
+$weight-600 : 600;
+$weight-700 : 700;
+$weight-800 : 800;
+$weight-900 : 900;
+
+
+
 body {
-    background-color: #1D1D1D;
+    background-color: $white;
     text-align: center;
+}
+
+.img-intro {
+    z-index: $z-3;
+    position: $pos-relative;
+    object-fit: cover;
+}
+
+
+
+.texte-intro {
+    z-index: $z3;
+    position: $pos-relative;
+    top: -90vh; // ! regler le probleme de responsive
+}
+
+.txt-hero {
+    font-family: 'italiana';
+    font-weight: $weight-100;
+    font-size: $titre-1;
+    text-align: $ali-center;
+    color: $white;
+}
+
+.txt-anchor {
+    font-family: "Antic Didone";
+    font-weight: $weight-100;
+    font-size: $titre-4;
+    text-align: $ali-center;
+    color: $white;
+    text-decoration: underline;
+}
+
+.titre-filtres {
+    font-family: 'italiana';
+    font-size: $titre-3;
+}
+
+.Catalogue {
+    font-family: "Antic Didone";
+    font-size: $titre-2;
+}
+
+.arrow-right {
+    width: 7% !important;
+}
+
+.anchor-1 {
+    gap: 3%;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+}
+
+.gap-montre {
+    gap: 15%;
+}
+
+.carte-montre {
+    background-color: $white;
+    border: 1px solid $border-black;
+    border-radius: $border-radius-50px;
+    display: flex;
+    flex-direction: column;
+    align-items: $ali-center;
+    transition: 1s;
+}
+
+.carte-montre:hover {
+    transform: scale(1.1);
+}
+
+
+.Nom-montre {
+    color: $black;
+    text-align: $ali-center;
+    font-family: 'italiana';
+    font-size: 46px;
+}
+
+.prix {
+    color: $black;
+    text-align: $ali-center;
+    font-family: 'italiana';
+    font-size: 46px;
+}
+
+.Magnanime {
+    width: 90%;
+}
+
+.within {
+    margin-top: 5%;
+}
+
+.maxence {
+    margin-top: 25%;
+}
+
+.beauvarlet {
+    margin-top: 25%;
+}
+
+.filtres {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+}
+
+.cat {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+}
+
+.titre-cat {
+    font-family: 'italiana';
 }

@@ -1,6 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 body {
-  background-color: #1D1D1D;
+  background-color: #ffffff;
   text-align: center;
+}
+
+.img-intro {
+  z-index: -3;
+  position: relative;
+  object-fit: cover;
+}
+
+.texte-intro {
+  z-index: 3;
+  position: relative;
+  top: -90vh;
+}
+
+.txt-hero {
+  font-family: "italiana";
+  font-weight: 100;
+  font-size: 96px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.txt-anchor {
+  font-family: "Antic Didone";
+  font-weight: 100;
+  font-size: 35.5px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.titre-filtres {
+  font-family: "italiana";
+  font-size: 48px;
+}
+
+.Catalogue {
+  font-family: "Antic Didone";
+  font-size: 60px;
+}
+
+.arrow-right {
+  width: 7% !important;
+}
+
+.anchor-1 {
+  gap: 3%;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+}
+
+.gap-montre {
+  gap: 15%;
+}
+
+.carte-montre {
+  background-color: #ffffff;
+  border: 1px solid #00000f;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
+}
+
+.carte-montre:hover {
+  transform: scale(1.1);
+}
+
+.Nom-montre {
+  color: #000000;
+  text-align: center;
+  font-family: "italiana";
+  font-size: 46px;
+}
+
+.prix {
+  color: #000000;
+  text-align: center;
+  font-family: "italiana";
+  font-size: 46px;
+}
+
+.Magnanime {
+  width: 90%;
+}
+
+.within {
+  margin-top: 5%;
+}
+
+.maxence {
+  margin-top: 25%;
+}
+
+.beauvarlet {
+  margin-top: 25%;
+}
+
+.filtres {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+}
+
+.cat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.titre-cat {
+  font-family: "italiana";
 }
 
 /*# sourceMappingURL=style.css.map */
