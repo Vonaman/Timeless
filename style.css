@@ -160,6 +160,64 @@ nav {
   margin-right: 33px;
 }
 
+.image-fond-compte .info-perso {
+  margin: 10%;
+  background-color: rgba(105, 117, 101, 0.4392156863);
+  backdrop-filter: blur(10px);
+  width: 40%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  gap: 50px;
+  border-radius: 62px;
+}
+.image-fond-compte .info-perso .title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.image-fond-compte .info-perso .title h4 {
+  margin: 0;
+  color: #ECDFCC;
+  font-size: 27.3px;
+}
+.image-fond-compte .info-perso .trait {
+  width: 90%;
+  height: 2px;
+  background-color: #ECDFCC;
+}
+.image-fond-compte .info-perso .forms-info input {
+  background-color: #697565;
+  border: #ECDFCC 1px solid;
+  border-radius: 90px;
+  padding: 10px;
+  width: 100%;
+  color: #ECDFCC;
+}
+.image-fond-compte .info-perso ::placeholder {
+  color: #ECDFCC;
+  opacity: 60%;
+}
+.image-fond-compte .info-perso .formalité_compte {
+  width: 100%;
+  gap: 20%;
+}
+.image-fond-compte .info-perso .button {
+  color: #ECDFCC;
+  background-color: #697565;
+  border: #ECDFCC 1px solid;
+  border-radius: 90px;
+  padding: 10px 20px;
+  transition: 0.5s;
+}
+.image-fond-compte .info-perso .button:hover {
+  transform: scale(1.15);
+  background-color: #ECDFCC;
+  color: #697565;
+}
+
 .image-fond-compte .content {
   margin: 10%;
   background-color: rgba(105, 117, 101, 0.4392156863);
@@ -179,7 +237,7 @@ nav {
   gap: 20px;
   transition: 0.5s;
 }
-.image-fond-compte .content .contents p {
+.image-fond-compte .content .contents a {
   margin: 0;
   color: #ECDFCC;
   font-size: 35.5px;

@@ -25,6 +25,65 @@ $w-20 : 20%;
 $font-p : "Inter", sans-serif ;
 $font-t : "Antic Didone";
 
+.image-fond-compte .info-perso{
+    margin: 10%;
+    background-color: $vert70;
+    backdrop-filter: blur(10px);
+    width: $w-40;
+    height: auto;
+    display: flex;
+    justify-content: start; 
+    gap: 50px;
+    border-radius: 62px;
+    & .title{
+        width: $w-100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        & h4{
+            margin: 0;
+            color: $creme;
+            font-size: $titre-h5;
+        }
+    }
+    & .trait{
+        width: $w-90;
+        height: 2px;
+        background-color: $creme ;
+    }
+    & .forms-info input{
+        background-color: $vert ;
+        border: $creme 1px solid; 
+        border-radius: 90px;
+        padding: 10px;  
+        width: $w-100;
+        color: $creme;
+    }
+    & ::placeholder{
+        color: $creme;
+        opacity: 60%;
+    }
+    & .formalité_compte{
+        width: $w-100;
+        gap: 20%;
+    }
+    & .button{
+        color: $creme;
+        background-color: $vert;
+        border: $creme 1px solid;
+        border-radius: 90px;
+        padding: 10px 20px;
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.15);
+            background-color: $creme;
+            color: $vert;
+        }
+    }
+}
+
+
 .image-fond-compte .content{
     margin: 10%;
     background-color: $vert70;
@@ -32,7 +91,7 @@ $font-t : "Antic Didone";
     width: $w-40;
     height: auto;
     display: flex;
-    justify-content: start;
+    justify-content: start; 
     gap: 50px;
     border-radius: 62px;
     & .contents{
@@ -42,7 +101,7 @@ $font-t : "Antic Didone";
         align-items: center;
         gap: 20px;
         transition: 0.5s;
-        & p{
+        & a{
             margin: 0;
             color: $creme;
             font-size: $titre-h4;
