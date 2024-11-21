@@ -252,6 +252,60 @@ nav {
   background-color: #ECDFCC;
 }
 
+.image-fond-compte .info-histo {
+  margin: 10%;
+  background-color: rgba(105, 117, 101, 0.4392156863);
+  backdrop-filter: blur(10px);
+  width: 40%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  gap: 50px;
+  border-radius: 62px;
+}
+.image-fond-compte .info-histo .title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.image-fond-compte .info-histo .title h4 {
+  margin: 0;
+  color: #ECDFCC;
+  font-size: 27.3px;
+}
+.image-fond-compte .info-histo .trait {
+  width: 90%;
+  height: 2px;
+  background-color: #ECDFCC;
+}
+.image-fond-compte .info-histo .histo-content {
+  width: 100%;
+}
+.image-fond-compte .info-histo .histo-content .items {
+  width: 100%;
+  transition: 0.5s;
+}
+.image-fond-compte .info-histo .histo-content .items img {
+  width: 50%;
+  height: auto;
+  border-radius: 100%;
+}
+.image-fond-compte .info-histo .histo-content .items h6 {
+  font-size: 27.3px;
+  color: #ECDFCC;
+  font-family: "Inter", sans-serif;
+}
+.image-fond-compte .info-histo .histo-content .items p {
+  font-size: 27.3px;
+  color: #ECDFCC;
+  font-family: "Inter", sans-serif;
+}
+.image-fond-compte .info-histo .histo-content .items:hover {
+  transform: scale(1.1);
+}
+
 html {
   scroll-behavior: smooth;
 }

@@ -117,3 +117,56 @@ $font-t : "Antic Didone";
     }
 }
 
+.image-fond-compte .info-histo{
+    margin: 10%;
+    background-color: $vert70;
+    backdrop-filter: blur(10px);
+    width: $w-40;
+    height: auto;
+    display: flex;
+    justify-content: start; 
+    gap: 50px;
+    border-radius: 62px;
+    & .title{
+        width: $w-100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        & h4{
+            margin: 0;
+            color: $creme;
+            font-size: $titre-h5;
+        }
+    }
+    & .trait{
+        width: $w-90;
+        height: 2px;
+        background-color: $creme ;
+    }
+    & .histo-content{
+        width: $w-100;
+        & .items{
+            width: $w-100;
+            transition: 0.5s;
+            & img{
+                width: $w-50;
+                height: auto;
+                border-radius: 100%;
+            }
+            & h6{
+                font-size: $titre-h5;
+                color: $creme;
+                font-family: $font-p;
+            }
+            & p{
+                font-size: $titre-h5;
+                color: $creme;
+                font-family: $font-p;
+            }
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
