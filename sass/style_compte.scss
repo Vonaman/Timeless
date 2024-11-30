@@ -1,0 +1,173 @@
+
+$creme : #ECDFCC;
+$vert : #697565;
+$vert70 : #69756570;
+$noir : #181C14;
+$gris : #3C3D37;
+
+$titre-h1 : 96px;
+$titre-h2 : 60px;
+$titre-h3 : 48px;
+$titre-h4 : 35.5px;
+$titre-h5 : 27.3px;
+$titre-h6 : 21px;
+$para : 16px;
+
+$w-100 : 100%;
+$w-90 : 90%;
+$w-80 : 80%;
+$w-70 : 70%;
+$w-60 : 60%;
+$w-50 : 50%;
+$w-40 : 40%;
+$w-20 : 20%;
+
+$font-p : "Inter", sans-serif ;
+$font-t : "Antic Didone";
+
+.image-fond-compte .info-perso{
+    margin: 10%;
+    background-color: $vert70;
+    backdrop-filter: blur(10px);
+    width: $w-40;
+    height: auto;
+    display: flex;
+    justify-content: start; 
+    gap: 50px;
+    border-radius: 62px;
+    & .title{
+        width: $w-100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        & h4{
+            margin: 0;
+            color: $creme;
+            font-size: $titre-h5;
+        }
+    }
+    & .trait{
+        width: $w-90;
+        height: 2px;
+        background-color: $creme ;
+    }
+    & .forms-info input{
+        background-color: $vert ;
+        border: $creme 1px solid; 
+        border-radius: 90px;
+        padding: 10px;  
+        width: $w-100;
+        color: $creme;
+    }
+    & ::placeholder{
+        color: $creme;
+        opacity: 60%;
+    }
+    & .formalité_compte{
+        width: $w-100;
+        gap: 20%;
+    }
+    & .button{
+        color: $creme;
+        background-color: $vert;
+        border: $creme 1px solid;
+        border-radius: 90px;
+        padding: 10px 20px;
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.15);
+            background-color: $creme;
+            color: $vert;
+        }
+    }
+}
+
+
+.image-fond-compte .content{
+    margin: 10%;
+    background-color: $vert70;
+    backdrop-filter: blur(10px);
+    width: $w-40;
+    height: auto;
+    display: flex;
+    justify-content: start; 
+    gap: 50px;
+    border-radius: 62px;
+    & .contents{
+        width: $w-100;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+        transition: 0.5s;
+        & a{
+            margin: 0;
+            color: $creme;
+            font-size: $titre-h4;
+            text-decoration: none;
+        }   &:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+    }
+    & .trait{
+        width: $w-90;
+        height: 2px;
+        background-color: $creme ;
+    }
+}
+
+.image-fond-compte .info-histo{
+    margin: 10%;
+    background-color: $vert70;
+    backdrop-filter: blur(10px);
+    width: $w-40;
+    height: auto;
+    display: flex;
+    justify-content: start; 
+    gap: 50px;
+    border-radius: 62px;
+    & .title{
+        width: $w-100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        & h4{
+            margin: 0;
+            color: $creme;
+            font-size: $titre-h5;
+        }
+    }
+    & .trait{
+        width: $w-90;
+        height: 2px;
+        background-color: $creme ;
+    }
+    & .histo-content{
+        width: $w-100;
+        & .items{
+            width: $w-100;
+            transition: 0.5s;
+            & img{
+                width: $w-50;
+                height: auto;
+                border-radius: 100%;
+            }
+            & h6{
+                font-size: $titre-h5;
+                color: $creme;
+                font-family: $font-p;
+            }
+            & p{
+                font-size: $titre-h5;
+                color: $creme;
+                font-family: $font-p;
+            }
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
