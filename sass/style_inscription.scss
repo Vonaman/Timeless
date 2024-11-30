@@ -37,12 +37,17 @@ nav {
 
 }
 
+.forms a{
+    text-decoration: none;
+}
+
+.inscription-body{
+    background-color: $creme;
+}
+
 .formulaire .img-forms{
-    position: absolute;
-    z-index: 0;
-    top: -10.5vh;
-    width: auto;
-    height: 100%;
+    width: 50%;
+    height: auto;
 }
 
 .formulaire-compte{
