@@ -1,6 +1,7 @@
 @import 'style_histoire.scss';
 @import 'style_inscription.scss';
 @import 'style_compte.scss';
+@import 'style_contact.scss';
 
 $creme : #ECDFCC;
 $vert : #697565;
@@ -230,6 +231,7 @@ footer{
         color: $creme;
         font-size: $para;
         transition: 0.5s;
+        text-decoration: none;
     }
     & a:hover{
         transform: scale(1.25);

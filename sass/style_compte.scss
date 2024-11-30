@@ -105,6 +105,7 @@ $font-t : "Antic Didone";
             margin: 0;
             color: $creme;
             font-size: $titre-h4;
+            text-decoration: none;
         }   &:hover{
             transform: scale(1.05);
             cursor: pointer;
